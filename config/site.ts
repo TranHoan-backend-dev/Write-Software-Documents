@@ -27,12 +27,16 @@ export const siteConfig = {
       label: "SRS",
       href: "/srs",
     },
+    {
+      label: "SDD",
+      href: "/sdd",
+    },
   ],
   links: {
-    github: "https://github.com",
-    twitter: "https://twitter.com",
-    docs: "/srs",
-    discord: "https://discord.com",
-    sponsor: "https://patreon.com",
+    github: "https://github.com/TranHoan-backend-dev/Write-Software-Documents",
+    // twitter: "https://twitter.com",
+    // docs: "/srs",
+    // discord: "https://discord.com",
+    // sponsor: "https://patreon.com",
   },
 };

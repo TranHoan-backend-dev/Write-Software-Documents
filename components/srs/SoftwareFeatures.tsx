@@ -248,7 +248,7 @@ export const SoftwareFeatures = () => {
                 </div>
 
                 <p className="my-4"><strong><em>3.1.6 Entity Details</em></strong></p>
-                <p className="my-4 font-bold"><RichTextEditor initialContent="1. Product" simple tagName="span" /></p>
+                <div className="my-4 font-bold"><RichTextEditor initialContent="1. Product" simple tagName="span" /></div>
                 <table className={srsPrimitives.table}>
                     <thead>
                         <tr>

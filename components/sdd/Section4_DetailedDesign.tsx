@@ -96,11 +96,11 @@ export const Section4_DetailedDesign = () => {
             {/* Dynamic Components List */}
             {sddData.components.map((comp, idx) => (
                 <div key={comp.id} className="mt-8 border-t pt-4 group/comp relative">
-                    <h3 className={sddPrimitives.h3 + " flex items-center gap-4"}>
-                        <span>
-                            4.{idx + 2} <span className="inline-block min-w-[50px]"><RichTextEditor initialContent={comp.ucId ? comp.ucId : 'UC...'} onChange={(v) => updateCompField(idx, 'ucId', v)} simple className="inline-block" /></span> -
-                            <span className="inline-block min-w-[100px]"><RichTextEditor initialContent={comp.name ? comp.name : 'Component Name'} onChange={(v) => updateCompField(idx, 'name', v)} simple className="inline-block" /></span>
-                        </span>
+                    <div className={sddPrimitives.h3 + " flex items-center gap-4"}>
+                        <div>
+                            4.{idx + 2} <div className="inline-block min-w-[50px]"><RichTextEditor initialContent={comp.ucId ? comp.ucId : 'UC...'} onChange={(v) => updateCompField(idx, 'ucId', v)} simple className="inline-block" /></div> -
+                            <div className="inline-block min-w-[100px]"><RichTextEditor initialContent={comp.name ? comp.name : 'Component Name'} onChange={(v) => updateCompField(idx, 'name', v)} simple className="inline-block" /></div>
+                        </div>
                         {sddData.components.length > 1 && (
                             <Button
                                 isIconOnly
@@ -114,7 +114,7 @@ export const Section4_DetailedDesign = () => {
                                 X
                             </Button>
                         )}
-                    </h3>
+                    </div>
 
                     <h4 className={sddPrimitives.h4}>4.{idx + 2}.1 Screen Design</h4>
                     <div className="pl-4">

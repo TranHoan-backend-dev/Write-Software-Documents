@@ -83,9 +83,9 @@ export const Section5_Database = () => {
             {sddData.databaseTables.map((table, tableIdx) => (
                 <div key={tableIdx} className="my-6 group/table relative">
                     <div className="flex items-center justify-between mb-2">
-                        <p className="font-bold italic text-black">
+                        <div className="font-bold italic text-black">
                             {String.fromCharCode(97 + tableIdx)}. <RichTextEditor initialContent={table.tableName} onChange={(v) => updateTableName(tableIdx, v)} simple className="inline-block font-bold" />
-                        </p>
+                        </div>
                         {sddData.databaseTables.length > 1 && (
                             <Button
                                 size="sm"
