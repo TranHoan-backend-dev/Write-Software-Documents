@@ -1,4 +1,3 @@
-
 'use client';
 
 import React from 'react';
@@ -16,7 +15,7 @@ import { srsPrimitives } from '../../components/primitives';
 export default function SRSPage() {
     return (
         <SRSProvider>
-            <div className={`srs-wrapper bg-[#fdfdfd] ${srsPrimitives.text} text-[#1a1a1a]`}>
+            <div className={`srs-wrapper bg-[#fdfdfd] ${srsPrimitives.text} text-[#1a1a1a] mx-5`}>
                 {/* Control Panel */}
                 <PrintButton />
 
@@ -29,6 +28,7 @@ export default function SRSPage() {
                                 subtitle="Project Name"
                                 showSubtitle={true}
                                 projectCodeDefault="1.0"
+                                docCodeDefault='1.0'
                             />
                             <div className={srsPrimitives.pageBreak} />
 

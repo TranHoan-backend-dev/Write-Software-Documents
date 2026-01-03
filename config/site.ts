@@ -13,6 +13,10 @@ export const siteConfig = {
       label: "SRS",
       href: "/srs",
     },
+    {
+      label: "SDD",
+      href: "/sdd",
+    },
   ],
   navMenuItems: [
     {
