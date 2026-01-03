@@ -11,7 +11,7 @@ export const POST = async (req: Request) => {
         return NextResponse.json({ error: "No files received." }, { status: 400 });
     }
 
-    const buffer = Buffer.from(await (file as Blob).arrayBuffer());
+    const buffer = new Uint8Array(await (file as File).arrayBuffer());
 
     // Create a simplified filename to avoid weird chars, but keep extension
     const originalName = (file as File).name.replaceAll(" ", "_");
